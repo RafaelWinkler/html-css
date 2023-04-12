@@ -1,4 +1,14 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --font01:  Verdana, Geneva, Tahoma, sans-serif;
+    --font02:'Roboto', sans-serif;                                                        
+    --font03: 'Sriracha', cursive;  
+}   
 * {
  margin: 0px;
  padding: 0px;   
@@ -7,6 +17,7 @@
 html, body {
     min-height: 100vh;
     background-color: #a9a9a9;
+    font-family: var(--font01);
 }
 
 header {
@@ -18,6 +29,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--font02);
+    font-size: 4em;
 }
 header > p {
     padding-bottom: 50px;
@@ -37,6 +50,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font03);
+    font-size: 1.5em;
 
 }
 
@@ -50,7 +65,8 @@ section {
     color: #ffffff;
 }
 .imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
     background-color: #00000085;
 }
 footer {
