@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset {
+            background-color: lightgray;
+            margin-bottom: 10px;
+        }
+        legend {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 200px;
+            max-width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testes de Formulários</h1>
+    <form action="cadastro.php"  method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esjiu" id="ijiu" checked> <label for="ijiu">Jiu-jitsu</label> <br>
+            <input type="checkbox" name="esfut" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="estenis" id="itenis"> <label for="itenis">Tênis</label> <br>
+            <input type="checkbox" name="escorrer" id="icorrer"> <label for="icorrer">Correr</label> <br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
