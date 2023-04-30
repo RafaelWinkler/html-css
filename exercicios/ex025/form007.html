@@ -13,7 +13,50 @@
 </head>
 <body>
     <h1>Testes de formulários</h1>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iopcoes">Opções:</label>
+            <select name="opcpes" id="iopcoes" required>
+                <optgroup label="Primeira escolha">
+                    <option value="" selected>---escolha---</option>
+                    <option value="">opção 1</option>
+                    <option value="">opção 2</option>
+                    <option value="">opção 3</option>
+                    <option value="">opção 4</option>
+                    <option value="">opção 5</option>
+                </optgroup>
+                <optgroup label="Segunda escolha">
+                    <option value="">opção 1</option>
+                    <option value="">opção 2</option>
+                    <option value="">opção 3</option>
+                    <option value="">opção 4</option>
+                    <option value="">opção 5</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprfo">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lsprof" required>
+            <datalist id="lsprof">
+                <option value="" selected>---escolha---</option>
+                <option>Administrador</option>
+                <option>Professor</option>
+                <option>Encandor</option>
+                <option>Padeiro</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
