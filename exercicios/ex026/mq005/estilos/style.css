@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+html,body {
+    background-color: rgb(211, 211, 211);
+}
+header {
+    background-color: rgb(173, 172, 172);
+}
+header h1 {
+    padding: 10px;
+    text-align: center;
+}
+menu {
+    display: none;
+}
+menu ul {
+    list-style-type: none;
+}
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(68, 66, 66);
+    color: white;
+    text-decoration: none;
+    border-top: 2px solid rgb(128, 128, 128);
+}
+span#burguer {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer; /*ícone mãozinha*/
+}
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+menu > ul > li > a:hover {
+    background-color: gray;
+}
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+article > h2 {
+    margin-bottom: 20px;
+}
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
